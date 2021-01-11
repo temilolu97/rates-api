@@ -15,7 +15,9 @@ app.get('/api/rates',async (request,response)=>{
         })    
 
     }
-    )
+    ).catch(error=>{
+        console.log(error.response)
+    })
     
 })
 
